@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import styles from '../styles/header.module.css'
 
 const navItems: { label: string; page?: string; link?: string }[] = [
-  { label: 'Página Inicial', page: '/blog' },
+  { label: 'Blog', page: '/' },
   { label: 'Sobre/Contato', page: '/contact' },
 ]
 
