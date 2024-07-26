@@ -1,0 +1,84 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Empilha os itens verticalmente */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  min-height: 80px; /* Reduz a altura mínima do header */
+  padding: 1em 0; /* Ajuste o padding para ajustar o espaço vertical */
+  text-align: center;
+  letter-spacing: -0.02em;
+  z-index: 1;
+}
+
+.header ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.5em; /* Aumenta o tamanho da fonte dos links */
+  margin: 0; /* Remove margens para melhor alinhamento */
+}
+
+.header ul li {
+  display: inline-block;
+  padding: 0 15px; /* Ajusta o espaçamento entre os itens do menu */
+}
+
+.header :global(a) {
+  color: var(--accents-3);
+  font-weight: 400;
+}
+
+.header :global(a.active) {
+  color: #0a2e25;
+  font-weight: 600;
+  text-shadow: 0 0 5px #229c8a, 0 0 10px #b2e4af;
+}
+
+.header :global(a:hover) {
+  color: #0a2e25;
+  font-weight: 600;
+  animation: pisca 1s infinite;
+}
+
+.header img {
+  position: relative;
+  width: 420px;
+  max-width: 100%; /* Ajusta o tamanho da imagem */
+  height: auto;
+  margin-bottom: -13px; /* Espaçamento entre o logo e o menu */
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 1em 0; /* Ajuste o padding para telas menores */
+    font-size: 1em; /* Ajusta o tamanho da fonte para dispositivos menores */
+  }
+
+  .header img {
+    max-width: 60%; /* Ajusta o tamanho da imagem para telas menores */
+  }
+
+  .header ul {
+    font-size: 1.2em; /* Ajusta o tamanho da fonte para telas menores */
+    margin-top: -10px;
+  }
+}
+@media (min-width: 300px) {
+  .header img {
+    margin-top: -120px;
+  }
+}
+/*#region Animações*/
+@keyframes pisca {
+  0%,
+  100% {
+    text-shadow: 0 0 10px #229c8a, 0 0 20px #b2e4af, 0 0 30px #229c8a,
+      0 0 40px #b2e4af;
+    color: #0a2e25;
+  }
+  50% {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff,
+      0 0 40px #ffffff;
+    color: #ffffff;
+  }
+}
+/*#endregion*/

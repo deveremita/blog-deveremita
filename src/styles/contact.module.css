@@ -1,0 +1,253 @@
+.contact_area {
+  background-color: #cfe5d7;
+  padding: 6px;
+  margin-top: -140px;
+  margin-bottom: -140px;
+}
+.links {
+  display: block;
+  margin: 1rem auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.links a {
+  width: 48px;
+  height: 48px;
+  margin: 0 10px;
+  display: inline-block;
+  transition: opacity 200ms ease;
+}
+
+.links a:hover {
+  opacity: 0.6;
+}
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0;
+  top: 38px;
+}
+.contact_resume {
+  background-color: #cfe5d7;
+  margin-top: 32px;
+  padding: 20px 0 15px 15px;
+  display: flex;
+  align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  width: 100%;
+  height: 100vh;
+  gap: 20px; /* Espaço entre o texto e a imagem */
+  text-align: left; /* Centraliza o texto dentro do contêiner */
+  margin-bottom: 120px;
+  color: #0a2e25;
+  font-weight: bolder;
+}
+
+.contact_resume > div {
+  flex: 1;
+  font-size: 19pt;
+  max-width: 60%;
+  margin-right: 20px; /* Centraliza o texto dentro deste div */
+}
+
+.contact_resume img {
+  height: 250px;
+  width: 250px;
+  max-width: 100%;
+  box-shadow: 0 10px 10px;
+  border-radius: 50%;
+  animation: float 5s ease-in-out infinite;
+}
+
+.name {
+  text-align: center;
+}
+
+.name a {
+  color: inherit;
+}
+
+.skills {
+  width: 80%;
+  list-style: none;
+  padding: 20px;
+  margin: 60px auto;
+  text-transform: uppercase;
+  margin-bottom: 30%;
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.25), 0 10px 20px rgba(0, 0, 0, 0.22);
+}
+.skills h2 {
+  font-weight: bolder;
+  text-align: center;
+}
+.skills h3 {
+  margin: 5px;
+  color: #0a2e25;
+  font-weight: 600;
+  text-shadow: 0 0 5px #229c8a, 0 0 10px #b2e4af;
+}
+.skills li {
+  margin: 20px 0;
+  padding: 10px;
+}
+.bar {
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.24);
+}
+.bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(
+    135deg,
+    rgba(34, 156, 138, 0.5) 0%,
+    rgb(126, 189, 119)
+  );
+}
+/*#region habilidades */
+.html {
+  width: 90%;
+  animation: html 3s;
+}
+.css {
+  width: 45%;
+  animation: css 3s;
+}
+.js {
+  width: 76%;
+  animation: js 3s;
+}
+.ts {
+  width: 45%;
+  animation: ts 3s;
+}
+.node {
+  width: 65%;
+  animation: ts 3s;
+}
+.py {
+  width: 95%;
+  animation: ts 3s;
+}
+.dj {
+  width: 45%;
+  animation: ts 3s;
+}
+.jv {
+  width: 67%;
+  animation: ts 3s;
+}
+.c_cpp {
+  width: 42%;
+  animation: ts 3s;
+}
+.scripts_lang {
+  width: 76%;
+  animation: ts 3s;
+}
+/*#endregion */
+/*#region animação da barra de skills*/
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 76%;
+  }
+}
+@keyframes ts {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+@keyframes node {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes py {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@keyframes dj {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+@keyframes jv {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 67%;
+  }
+}
+@keyframes c_cpp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 42%;
+  }
+}
+@keyframes scripts_lang {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 76%;
+  }
+}
+/*#endregion*/
+/*#region animação da foto do avatar*/
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+/*#endregion animação da foto do avatar*/
